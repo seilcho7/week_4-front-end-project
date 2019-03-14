@@ -1,5 +1,6 @@
 const URL1 = ""
 const storageKey= "vegetarian-breakfast"
+let recipeArray =[]
 // Adds function that fetch data from api
 function retrieveData1() {
     fetch(URL1)
@@ -42,7 +43,7 @@ function loadRecipes() {
     //  convert it back into an array 
     const arrayOfRecipes = JSON.parse(jsonRecipes);
 
-    console.log(`loaded ${arrayOfRecipes.length}recipes`)
+    // console.log(`loaded ${arrayOfRecipes.length}recipes`)
     // return it 
     console.log(arrayOfRecipes)
     return arrayOfRecipes
